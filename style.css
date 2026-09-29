@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #b8d8f5;
+}
+
+h1 {
+    text-align: center;
+    color: #1565c0;
+}
+
+h2 {
+    color: #1565c0;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: #174a7c;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #90caf9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f8fcff;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #1976d2;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.success {
+    color: #087f23;
+    font-weight: bold;
+}
+
+
+/* Table */
+
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #90caf9;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #1976d2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f8ff;
+}
+
+
+/* Hide Major until BSIT is selected */
+
+#majorDiv {
+    display: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        width: auto;
+    }
+
+}

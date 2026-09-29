@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Enrollment System</h1>
+
+        <form id="enrollmentForm" novalidate>
+
+            <!-- Student ID -->
+            <label>Student ID</label>
+            <input type="text" id="studentId" required minlength="5">
+            <p id="studentIdError" class="error"></p>
+
+
+            <!-- Prefix -->
+            <label>Prefix</label>
+            <input type="text" id="prefix" minlength="2">
+            <p id="prefixError" class="error"></p>
+
+
+            <!-- First Name -->
+            <label>First Name</label>
+            <input type="text" id="firstName" required minlength="3">
+            <p id="firstNameError" class="error"></p>
+
+
+            <!-- Middle Name -->
+            <label>Middle Name</label>
+            <input type="text" id="middleName" minlength="2">
+            <p id="middleNameError" class="error"></p>
+
+
+            <!-- Last Name -->
+            <label>Last Name</label>
+            <input type="text" id="lastName" required minlength="2">
+            <p id="lastNameError" class="error"></p>
+
+
+            <!-- Suffix -->
+            <label>Suffix</label>
+            <input type="text" id="suffix" minlength="2">
+            <p id="suffixError" class="error"></p>
+
+
+            <!-- Email -->
+            <label>Email</label>
+            <input type="email" id="email" required>
+            <p id="emailError" class="error"></p>
+
+
+            <!-- Course -->
+            <label>Course</label>
+
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BMMA">BMMA</option>
+                <option value="BSAIS">BSAIS</option>
+            </select>
+
+            <p id="courseError" class="error"></p>
+
+
+            <!-- Major -->
+            <div id="majorDiv">
+
+                <label>Major</label>
+
+                <select id="major">
+                    <option value="">Select Major</option>
+                    <option value="Net Sec">Net Sec</option>
+                    <option value="Web Tech">Web Tech</option>
+                    <option value="ERP">ERP</option>
+                </select>
+
+                <p id="majorError" class="error"></p>
+
+            </div>
+
+
+            <!-- Year Level -->
+            <label>Year Level</label>
+
+            <select id="year" required>
+                <option value="">Select Year Level</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+            </select>
+
+            <p id="yearError" class="error"></p>
+
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+            <p id="successMessage" class="success"></p>
+
+        </form>
+
+
+        <!-- Submitted Data -->
+        <h2>Submitted Student Data</h2>
+
+        <div class="tableContainer">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Prefix</th>
+                        <th>First Name</th>
+                        <th>Middle Name</th>
+                        <th>Last Name</th>
+                        <th>Suffix</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Major</th>
+                        <th>Year Level</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentData">
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
